@@ -704,5 +704,5 @@ if __name__ == "__main__":
     # 设置你的refresh_token
     IMENG_API_TOKEN = "xxxxx"
     r = JimengApiClient(refresh_token=IMENG_API_TOKEN)
-    r.generate_image("可爱的小狗",file_path="01.jpeg")
-    print(r)
+    image_urls = r.generate_image("可爱的小狗",file_path="01.jpeg")
+    print(image_urls)
