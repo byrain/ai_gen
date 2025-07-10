@@ -1,3 +1,7 @@
+'''
+替换 token
+支持参考图生成图片
+'''
 import requests
 import json
 import hashlib
