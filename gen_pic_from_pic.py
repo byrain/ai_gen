@@ -647,7 +647,7 @@ class JimengApiClient:
         item_list = []
         
         while status == 20:
-            time.sleep(1)
+            time.sleep(1) # 如果报错，可适当调高间隔时长
             
             result = self._request('POST', '/mweb/v1/get_history_by_ids', {
                 "history_ids": [history_id],
